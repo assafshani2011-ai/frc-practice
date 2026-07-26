@@ -29,7 +29,7 @@ public class practice {
         while (!closed.atLimit()){
             openmotor.setPower(-0.5);
         }
-        openmotor.stop();
+        
        
 
     }
