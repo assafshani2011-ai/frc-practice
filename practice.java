@@ -7,13 +7,13 @@ public class practice {
     private LimitSensor open;
     private LimitSensor closed;
     public void Intake(){
-
+        // 123
         rolleMotor = new Motor();
         openmotor = new Motor();
         front = new BallSensor();
         back = new BallSensor();
         open = new LimitSensor();
-        
+        // 234
         closed = new LimitSensor();
     }
     public void startIntake(){
