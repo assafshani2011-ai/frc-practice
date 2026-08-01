@@ -1,19 +1,16 @@
-public class practice {
-    public class Intake {
+public class Intake {
     private Motor rolleMotor;
     private Motor openmotor;
     private BallSensor front;
     private BallSensor back;
     private LimitSensor open;
     private LimitSensor closed;
-    public void Intake(){
-
+    public intake(){
         rolleMotor = new Motor();
         openmotor = new Motor();
         front = new BallSensor();
         back = new BallSensor();
         open = new LimitSensor();
-        
         closed = new LimitSensor();
     }
     public void startIntake(){
@@ -31,13 +28,11 @@ public class practice {
         while (!closed.atLimit()){
             openmotor.setPower(-0.5);
         }
-        
+        openmotor.stop();
        
 
     }
 
 
-
-}
 
 }
